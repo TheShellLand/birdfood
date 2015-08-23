@@ -8,4 +8,3 @@ wlan0     IEEE 802.11abgn  ESSID:off/any
           Retry short limit:7   RTS thr:off   Fragment thr:off
           Encryption key:off
           Power Management:on
-
