@@ -1,0 +1,9 @@
+brcmsmac              528384  0 
+cordic                 16384  1 brcmsmac
+bcma                   49152  1 brcmsmac
+mac80211              557056  1 brcmsmac
+brcmfmac              217088  0 
+brcmutil               16384  2 brcmfmac,brcmsmac
+cfg80211              454656  3 brcmfmac,brcmsmac,mac80211
+usbcore               200704  7 uas,brcmfmac,uvcvideo,usb_storage,usbhid,xhci_hcd,xhci_pci
+mmc_core              110592  4 mmc_block,sdhci,brcmfmac,sdhci_acpi

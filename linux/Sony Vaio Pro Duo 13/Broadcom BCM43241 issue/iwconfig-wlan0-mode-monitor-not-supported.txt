@@ -1,0 +1,11 @@
+root@chickenbutt:~# ifconfig wlan0 down
+root@chickenbutt:~# iwconfig wlan0 mode monitor
+Error for wireless request "Set Mode" (8B06) :
+    SET failed on device wlan0 ; Operation not supported.
+root@chickenbutt:~# iwconfig wlan0
+wlan0     IEEE 802.11abgn  ESSID:off/any  
+          Mode:Managed  Access Point: Not-Associated   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Encryption key:off
+          Power Management:on
+

@@ -1,0 +1,11 @@
+[ 1548.361470] usbcore: deregistering interface driver brcmfmac
+[ 1553.562888] brcmfmac: brcmf_sdio_drivestrengthinit: No SDIO Drive strength init done for chip 4324 rev 5 pmurev 17
+[ 1553.563246] usbcore: registered new interface driver brcmfmac
+[ 1553.563343] brcmfmac_sdio mmc0:0001:1: firmware: direct-loading firmware brcm/brcmfmac43241b4-sdio.bin
+[ 1553.563352] brcmfmac_sdio mmc0:0001:1: firmware: direct-loading firmware brcm/brcmfmac43241b4-sdio.txt
+[ 1553.709778] brcmfmac: brcmf_c_preinit_dcmds: Firmware version = wl0: Jul 17 2013 07:36:07 version 6.10.197.71 (r412987) FWID 01-882d2634
+[ 1553.723455] brcmfmac: brcmf_cfg80211_reg_notifier: not a ISO3166 code
+[ 1553.764370] brcmfmac: brcmf_add_if: ERROR: netdev:wlan0 already exists
+[ 1553.764376] brcmfmac: brcmf_add_if: ignore IF event
+[ 1563.827235] brcmfmac: brcmf_escan_timeout: timer expired
+[ 1587.142206] brcmfmac: brcmf_escan_timeout: timer expired

@@ -1,0 +1,7 @@
+[    1.876661] brcmfmac: brcmf_sdio_drivestrengthinit: No SDIO Drive strength init done for chip 4324 rev 5 pmurev 17
+[    1.877893] usbcore: registered new interface driver brcmfmac
+[    1.888464] brcmfmac_sdio mmc0:0001:1: firmware: direct-loading firmware brcm/brcmfmac43241b4-sdio.bin
+[    1.888486] brcmfmac_sdio mmc0:0001:1: firmware: failed to load brcm/brcmfmac43241b4-sdio.txt (-2)
+[    1.888550] brcmfmac_sdio mmc0:0001:1: Direct firmware load for brcm/brcmfmac43241b4-sdio.txt failed with error -2
+[    2.891252] brcmfmac: brcmf_sdio_htclk: HT Avail timeout (1000000): clkctl 0x50
+[    3.894756] brcmfmac: brcmf_sdio_htclk: HT Avail timeout (1000000): clkctl 0x50

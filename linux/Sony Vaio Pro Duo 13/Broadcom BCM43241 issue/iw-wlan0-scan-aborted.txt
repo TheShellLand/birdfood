@@ -1,0 +1,3 @@
+root@chickenbutt:~# iw wlan0 scan
+scan aborted!
+
