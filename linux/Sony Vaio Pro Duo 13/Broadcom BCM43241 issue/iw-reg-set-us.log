@@ -16,12 +16,13 @@ country US: DFS-FCC
 	(5250 - 5330 @ 80), (N/A, 23), (0 ms), DFS
 	(5735 - 5835 @ 80), (N/A, 30), (N/A)
 	(57240 - 63720 @ 2160), (N/A, 40), (N/A)
-root@chickenbutt:~# 
 
-root@chickenbutt:~# iwconfig 
-wlan0     IEEE 802.11abgn  ESSID:"SKYNET-5GHz"  
-          Mode:Managed  Frequency:5.785 GHz  Access Point: 2C:B0:5D:34:8E:26   
-          Bit Rate=24 Mb/s   Tx-Power=1496 dBm   
+
+
+root@chickenbutt:~# iwconfig wlan0
+wlan0     IEEE 802.11abgn  ESSID:"5GHz"
+          Mode:Managed  Frequency:5.785 GHz  Access Point: AF-3A-A8-9F-89-A4
+          Bit Rate=300 Mb/s   Tx-Power=1496 dBm
           Retry short limit:7   RTS thr:off   Fragment thr:off
           Encryption key:off
           Power Management:on
@@ -29,5 +30,17 @@ wlan0     IEEE 802.11abgn  ESSID:"SKYNET-5GHz"
           Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
           Tx excessive retries:0  Invalid misc:0   Missed beacon:0
 
-lo        no wireless extensions.
+
+
+
+Aug 24 00:45:41 chickenbutt kernel: [11224.033969] cfg80211: Calling CRDA for country: US
+Aug 24 00:45:41 chickenbutt wpa_supplicant[813]: wlan0: CTRL-EVENT-REGDOM-CHANGE init=USER type=COUNTRY alpha2=US
+Aug 24 00:45:41 chickenbutt kernel: [11224.057744] cfg80211: Regulatory domain changed to country: US
+Aug 24 00:45:41 chickenbutt kernel: [11224.057754] cfg80211:  DFS Master region: FCC
+Aug 24 00:45:41 chickenbutt kernel: [11224.057757] cfg80211:   (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp), (dfs_cac_time)
+Aug 24 00:45:41 chickenbutt kernel: [11224.057765] cfg80211:   (2402000 KHz - 2472000 KHz @ 40000 KHz), (N/A, 3000 mBm), (N/A)
+Aug 24 00:45:41 chickenbutt kernel: [11224.057772] cfg80211:   (5170000 KHz - 5250000 KHz @ 80000 KHz, 160000 KHz AUTO), (N/A, 1700 mBm), (N/A)
+Aug 24 00:45:41 chickenbutt kernel: [11224.057779] cfg80211:   (5250000 KHz - 5330000 KHz @ 80000 KHz, 160000 KHz AUTO), (N/A, 2300 mBm), (0 s)
+Aug 24 00:45:41 chickenbutt kernel: [11224.057784] cfg80211:   (5735000 KHz - 5835000 KHz @ 80000 KHz), (N/A, 3000 mBm), (N/A)
+Aug 24 00:45:41 chickenbutt kernel: [11224.057790] cfg80211:   (57240000 KHz - 63720000 KHz @ 2160000 KHz), (N/A, 4000 mBm), (N/A)
 
