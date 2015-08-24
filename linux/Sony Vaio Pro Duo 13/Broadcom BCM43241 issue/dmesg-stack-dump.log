@@ -1,0 +1,28 @@
+[ 1564.665199] ------------[ cut here ]------------
+[ 1564.665264] WARNING: CPU: 1 PID: 1385 at /build/linux-SgRlNT/linux-4.0.4/net/wireless/sme.c:664 __cfg80211_connect_result+0x3f9/0x470 [cfg80211]()
+[ 1564.665266] Modules linked in: binfmt_misc nfnetlink_queue nfnetlink_log nfnetlink bluetooth snd_hda_codec_hdmi snd_hda_codec_realtek snd_hda_codec_generic uvcvideo uas videobuf2_vmalloc videobuf2_memops videobuf2_core v4l2_common videodev usb_storage media joydev hid_sensor_rotation hid_sensor_incl_3d hid_sensor_magn_3d hid_sensor_als hid_sensor_gyro_3d hid_sensor_accel_3d hid_sensor_trigger hid_sensor_iio_common industrialio_triggered_buffer kfifo_buf industrialio snd_soc_rt5640 snd_soc_rl6231 hid_rmi snd_soc_core snd_compress hid_sensor_hub regmap_i2c hid_multitouch nls_utf8 nls_cp437 vfat fat pn544_mei mei_phy pn544 hci nfc iTCO_wdt iTCO_vendor_support x86_pkg_temp_thermal intel_powerclamp intel_rapl iosf_mbi coretemp kvm_intel efi_pstore kvm evdev pcspkr serio_raw efivars brcmfmac brcmutil snd_hda_intel
+[ 1564.665298]  sony_laptop snd_hda_controller cfg80211 snd_hda_codec i915 i2c_i801 snd_hwdep rfkill battery snd_pcm button dw_dmac dw_dmac_core drm_kms_helper snd_timer video drm i2c_designware_platform i2c_designware_core snd i2c_algo_bit lpc_ich mei_me soundcore mei mfd_core ac processor fuse autofs4 hid_generic usbhid ext4 crc16 mbcache jbd2 dm_mod sg sd_mod mmc_block crct10dif_pclmul crc32_pclmul crc32c_intel ghash_clmulni_intel aesni_intel aes_x86_64 lrw gf128mul glue_helper ablk_helper cryptd ahci libahci libata scsi_mod xhci_pci xhci_hcd usbcore usb_common thermal fan thermal_sys sdhci_acpi sdhci mmc_core i2c_hid hid
+[ 1564.665364] CPU: 1 PID: 1385 Comm: kworker/u16:0 Tainted: G        W       4.0.0-kali1-amd64 #1 Debian 4.0.4-1+kali2
+[ 1564.665367] Hardware name: Sony Corporation SVD132190X/VAIO, BIOS R1082S7 04/03/2014
+[ 1564.665374] Workqueue: cfg80211 cfg80211_event_work [cfg80211]
+[ 1564.665377]  0000000000000000 ffffffffa067a740 ffffffff81567c30 0000000000000000
+[ 1564.665381]  ffffffff8106e321 ffff880252432008 0000000000000000 0000000000000000
+[ 1564.665383]  ffff880253875000 ffff880036823618 ffffffffa0657fc9 0000000000000001
+[ 1564.665386] Call Trace:
+[ 1564.665400]  [<ffffffff81567c30>] ? dump_stack+0x40/0x50
+[ 1564.665415]  [<ffffffff8106e321>] ? warn_slowpath_common+0x81/0xb0
+[ 1564.665424]  [<ffffffffa0657fc9>] ? __cfg80211_connect_result+0x3f9/0x470 [cfg80211]
+[ 1564.665437]  [<ffffffff810ab8c4>] ? __wake_up+0x34/0x50
+[ 1564.665446]  [<ffffffffa0632258>] ? cfg80211_process_wdev_events+0x148/0x1c0 [cfg80211]
+[ 1564.665450]  [<ffffffff810a230a>] ? dequeue_task_fair+0x9a/0xa70
+[ 1564.665458]  [<ffffffffa0632308>] ? cfg80211_process_rdev_events+0x38/0x70 [cfg80211]
+[ 1564.665464]  [<ffffffffa062d01a>] ? cfg80211_event_work+0x1a/0x20 [cfg80211]
+[ 1564.665469]  [<ffffffff81086a12>] ? process_one_work+0x152/0x440
+[ 1564.665472]  [<ffffffff8108758b>] ? worker_thread+0x6b/0x560
+[ 1564.665474]  [<ffffffff81087520>] ? rescuer_thread+0x3b0/0x3b0
+[ 1564.665481]  [<ffffffff8108c543>] ? kthread+0xd3/0xf0
+[ 1564.665484]  [<ffffffff8108c470>] ? kthread_create_on_node+0x180/0x180
+[ 1564.665489]  [<ffffffff8156de98>] ? ret_from_fork+0x58/0x90
+[ 1564.665492]  [<ffffffff8108c470>] ? kthread_create_on_node+0x180/0x180
+[ 1564.665494] ---[ end trace 59434d2d70a007f1 ]---
+
