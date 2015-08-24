@@ -1,0 +1,33 @@
+root@chickenbutt:~# iw reg get
+country 00: DFS-UNSET
+	(2402 - 2472 @ 40), (N/A, 20), (N/A)
+	(2457 - 2482 @ 40), (N/A, 20), (N/A), NO-IR
+	(2474 - 2494 @ 20), (N/A, 20), (N/A), NO-OFDM, NO-IR
+	(5170 - 5250 @ 80), (N/A, 20), (N/A), NO-IR
+	(5250 - 5330 @ 80), (N/A, 20), (0 ms), DFS, NO-IR
+	(5490 - 5730 @ 160), (N/A, 20), (0 ms), DFS, NO-IR
+	(5735 - 5835 @ 80), (N/A, 20), (N/A), NO-IR
+	(57240 - 63720 @ 2160), (N/A, 0), (N/A)
+root@chickenbutt:~# iw reg set US
+root@chickenbutt:~# iw reg get
+country US: DFS-FCC
+	(2402 - 2472 @ 40), (N/A, 30), (N/A)
+	(5170 - 5250 @ 80), (N/A, 17), (N/A)
+	(5250 - 5330 @ 80), (N/A, 23), (0 ms), DFS
+	(5735 - 5835 @ 80), (N/A, 30), (N/A)
+	(57240 - 63720 @ 2160), (N/A, 40), (N/A)
+root@chickenbutt:~# 
+
+root@chickenbutt:~# iwconfig 
+wlan0     IEEE 802.11abgn  ESSID:"SKYNET-5GHz"  
+          Mode:Managed  Frequency:5.785 GHz  Access Point: 2C:B0:5D:34:8E:26   
+          Bit Rate=24 Mb/s   Tx-Power=1496 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Encryption key:off
+          Power Management:on
+          Link Quality=53/70  Signal level=-57 dBm  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:0   Missed beacon:0
+
+lo        no wireless extensions.
+
