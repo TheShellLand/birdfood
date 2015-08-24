@@ -1,3 +1,3 @@
 1. Copy brcmfmac43241b4-stio.txt to \lib\firmware\brcm\brcmfmac43241b4-stio.txt
 2. Reboot
-3. run as room: iw reg set US
+3. run as root: iw reg set US
