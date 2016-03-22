@@ -1,3 +1,5 @@
 1. Copy brcmfmac43241b4-stio.txt to \lib\firmware\brcm\brcmfmac43241b4-stio.txt
 2. Reboot
+2b. If it is still not loaded:
+    Rename brcmfmac43241b4-stio.txt to brcmfmac43241b4-sdio.txt
 3. run as root: iw reg set US
