@@ -1,0 +1,6 @@
+(Tue Jul-7 2:42:39pm)-(root:/var/log/lxd)-(12K:1)
+> file /var/lib/lxd/unix.socket
+/var/lib/lxd/unix.socket: socket
+(Tue Jul-7 2:44:19pm)-(root:/var/log/lxd)-(12K:1)
+> ls -hl /var/lib/lxd/unix.socket
+srw-rw---- 1 root lxd 0 Jul 12 14:42 /var/lib/lxd/unix.socket=

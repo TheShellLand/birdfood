@@ -1,0 +1,28 @@
+t=2016-07-12T14:42:11-0400 lvl=info msg="LXD is starting in normal mode" path=/var/lib/lxd
+t=2016-07-12T14:42:11-0400 lvl=warn msg="CGroup memory swap accounting is disabled, swap limits will be ignored."
+t=2016-07-12T14:42:11-0400 lvl=info msg="Default uid/gid map:"
+t=2016-07-12T14:42:11-0400 lvl=info msg=" - u 0 100000 65536"
+t=2016-07-12T14:42:11-0400 lvl=info msg=" - g 0 100000 65536"
+t=2016-07-12T14:42:11-0400 lvl=info msg=Init driver=storage/zfs
+t=2016-07-12T14:42:11-0400 lvl=info msg="Looking for existing certificates" cert=/var/lib/lxd/server.crt key=/var/lib/lxd/server.key
+t=2016-07-12T14:42:11-0400 lvl=info msg="LXD is socket activated"
+t=2016-07-12T14:42:11-0400 lvl=info msg="REST API daemon:"
+t=2016-07-12T14:42:11-0400 lvl=info msg=" - binding Unix socket" socket=/var/lib/lxd/unix.socket
+t=2016-07-12T14:42:11-0400 lvl=info msg=handling method=GET url=/1.0 ip=@
+t=2016-07-12T14:42:11-0400 lvl=info msg=handling url=/internal/ready ip=@ method=GET
+t=2016-07-12T14:42:16-0400 lvl=info msg=handling method=GET url=/1.0 ip=@
+t=2016-07-12T14:42:16-0400 lvl=info msg=handling method=GET url="/1.0/containers?recursion=1" ip=@
+t=2016-07-12T14:42:16-0400 lvl=info msg=handling method=GET url="/1.0/images?recursion=1" ip=@
+t=2016-07-12T14:42:22-0400 lvl=info msg=handling method=GET url=/1.0 ip=@
+t=2016-07-12T14:42:22-0400 lvl=info msg=handling method=PUT url=/1.0 ip=@
+t=2016-07-12T14:42:22-0400 lvl=info msg=Init driver=storage/dir
+t=2016-07-12T14:42:23-0400 lvl=info msg=handling method=GET url=/1.0 ip=@
+t=2016-07-12T14:42:23-0400 lvl=info msg=handling method=PUT url=/1.0 ip=@
+t=2016-07-12T14:42:23-0400 lvl=info msg=handling method=GET url=/1.0 ip=@
+t=2016-07-12T14:42:23-0400 lvl=info msg=handling method=PUT url=/1.0 ip=@
+t=2016-07-12T14:42:23-0400 lvl=info msg=handling method=GET url=/1.0 ip=@
+t=2016-07-12T14:42:23-0400 lvl=info msg=handling method=PUT url=/1.0 ip=@
+t=2016-07-12T14:42:23-0400 lvl=info msg=Init driver=storage/zfs
+t=2016-07-12T14:42:23-0400 lvl=info msg="Received 'terminated signal', exiting."
+t=2016-07-12T14:42:23-0400 lvl=info msg="Stopping REST API handler:"
+t=2016-07-12T14:42:23-0400 lvl=info msg=" - skipping socket-activated socket" socket=/var/lib/lxd/unix.socket
