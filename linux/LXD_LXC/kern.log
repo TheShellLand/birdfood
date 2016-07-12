@@ -1,0 +1,18 @@
+Jul 12 14:24:32 starktower NetworkManager[1167]: <info>  [1468347872.2886] manager: (lxcbr0_nat): new Bridge device (/org/freedesktop/NetworkManager/Devices/15)
+Jul 12 14:24:32 starktower kernel: [85171.089335] ip6_tables: (C) 2000-2006 Netfilter Core Team
+Jul 12 14:24:32 starktower NetworkManager[1167]: <info>  [1468347872.3134] devices added (path: /sys/devices/virtual/net/lxcbr0_nat, iface: lxcbr0_nat)
+Jul 12 14:24:32 starktower NetworkManager[1167]: <info>  [1468347872.3134] device added (path: /sys/devices/virtual/net/lxcbr0_nat, iface: lxcbr0_nat): no ifupdown configuration found.
+Jul 12 14:24:32 starktower NetworkManager[1167]: <info>  [1468347872.3136] device (lxcbr0_nat): state change: unmanaged -> unavailable (reason 'connection-assumed') [10 20 41]
+Jul 12 14:24:32 starktower NetworkManager[1167]: <info>  [1468347872.3160] keyfile: add connection in-memory (3c058e22-e509-4f8d-b531-1e4a8f3c6431,"lxcbr0_nat")
+Jul 12 14:24:32 starktower NetworkManager[1167]: <info>  [1468347872.3167] device (lxcbr0_nat): state change: unavailable -> disconnected (reason 'connection-assumed') [20 30 41]
+Jul 12 14:24:32 starktower NetworkManager[1167]: <info>  [1468347872.3179] device (lxcbr0_nat): Activation: starting connection 'lxcbr0_nat' (3c058e22-e509-4f8d-b531-1e4a8f3c6431)
+Jul 12 14:24:32 starktower NetworkManager[1167]: <info>  [1468347872.3189] device (lxcbr0_nat): state change: disconnected -> prepare (reason 'none') [30 40 0]
+Jul 12 14:24:32 starktower NetworkManager[1167]: <info>  [1468347872.3195] device (lxcbr0_nat): state change: prepare -> config (reason 'none') [40 50 0]
+Jul 12 14:24:32 starktower NetworkManager[1167]: <info>  [1468347872.3199] device (lxcbr0_nat): state change: config -> ip-config (reason 'none') [50 70 0]
+Jul 12 14:24:32 starktower NetworkManager[1167]: <info>  [1468347872.3227] device (lxcbr0_nat): state change: ip-config -> ip-check (reason 'none') [70 80 0]
+Jul 12 14:24:32 starktower NetworkManager[1167]: <info>  [1468347872.3239] device (lxcbr0_nat): state change: ip-check -> secondaries (reason 'none') [80 90 0]
+Jul 12 14:24:32 starktower NetworkManager[1167]: <info>  [1468347872.3247] device (lxcbr0_nat): state change: secondaries -> activated (reason 'none') [90 100 0]
+Jul 12 14:24:32 starktower NetworkManager[1167]: <info>  [1468347872.3275] device (lxcbr0_nat): Activation: successful, device activated.
+Jul 12 14:24:32 starktower NetworkManager[1167]: <info>  [1468347872.3611] device (lxcbr0_nat): state change: activated -> unmanaged (reason 'connection-assumed') [100 10 41]
+Jul 12 14:24:32 starktower kernel: [85171.142233] IPv6: ADDRCONF(NETDEV_UP): lxcbr0_nat: link is not ready
+Jul 12 14:24:32 starktower NetworkManager[1167]: <info>  [1468347872.3975] devices removed (path: /sys/devices/virtual/net/lxcbr0_nat, iface: lxcbr0_nat)
