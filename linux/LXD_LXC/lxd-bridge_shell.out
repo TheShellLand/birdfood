@@ -1,0 +1,54 @@
+
+
+> /bin/bash /usr/lib/lxd/lxd-bridge restart
+
+dnsmasq: failed to create listening socket for 10.184.237.1: Address already in use
+Failed to setup lxd-bridge.
+
+
+> rm /etc/default/lxd-bridge
+rm: remove regular file '/etc/default/lxd-bridge'? yes
+removed '/etc/default/lxd-bridge'
+(Tue Jul-7 4:36:06pm)-(root:/etc/default)-(184K:41)
+> /bin/bash /usr/lib/lxd/lxd-bridge start
+
+
+# lxd-bridge is able to start now
+# and ifconfig lists the bridge
+
+
+> ifconfig
+enp0s25   Link encap:Ethernet  HWaddr d0:50:99:ad:7c:59
+          inet addr:192.168.4.36  Bcast:192.168.7.255  Mask:255.255.252.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:75132 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:42702 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:83948255 (83.9 MB)  TX bytes:6712630 (6.7 MB)
+          Interrupt:20 Memory:fb100000-fb120000
+
+lo        Link encap:Local Loopback
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:275 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:275 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1
+          RX bytes:23371 (23.3 KB)  TX bytes:23371 (23.3 KB)
+
+lxdbr0    Link encap:Ethernet  HWaddr 12:13:fc:ac:eb:5f
+          inet6 addr: fe80::1013:fcff:feac:eb5f/64 Scope:Link
+          inet6 addr: fe80::1/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:17 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:0 (0.0 B)  TX bytes:3470 (3.4 KB)
+
+
+# but if you run lxd init
+# and setup the network, it breaks lxd-bridge and no bridge is created because
+# the lxd init process creates a socket that lxd-bridge isn't able to listen to
+# because when going through lxd init, the socket is created
+# and then lxd-bridge tries to start up on that same socket. it's weird
+
