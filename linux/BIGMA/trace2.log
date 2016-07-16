@@ -1,0 +1,39 @@
+[18240.232240] INFO: task txg_sync:11388 blocked for more than 120 seconds.
+[18240.233709]       Tainted: P           O    4.4.0-31-generic #50-Ubuntu
+[18240.235152] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[18240.236883] txg_sync        D ffff8800afabb090     0 11388      2 0x00000000
+[18240.236888]  ffff8800afabb090 ffffffffc07961d8 ffff88040d713200 ffff8804068e7080
+[18240.236891]  ffff8800afabc000 ffff8800bf812868 ffff8800bf812890 ffff8800bf8128b0
+[18240.236894]  0000000000000000 ffff8800afabb0a8 ffffffff81829a25 ffff8800bf8128a8
+[18240.236897] Call Trace:
+[18240.236994]  [<ffffffffc07961d8>] ? range_tree_find_impl+0x48/0x90 [zfs]
+[18240.237010]  [<ffffffff81829a25>] schedule+0x35/0x80
+[18240.237028]  [<ffffffffc0464c3b>] cv_wait_common+0x10b/0x140 [spl]
+[18240.237040]  [<ffffffff810c3ca0>] ? wake_atomic_t_function+0x60/0x60
+[18240.237047]  [<ffffffffc0464c85>] __cv_wait+0x15/0x20 [spl]
+[18240.237084]  [<ffffffffc0789f02>] dsl_scan_scrub_cb+0x452/0x580 [zfs]
+[18240.237117]  [<ffffffffc078b0ab>] dsl_scan_visitbp+0x34b/0xca0 [zfs]
+[18240.237145]  [<ffffffffc074f69f>] ? arc_read+0x46f/0xa80 [zfs]
+[18240.237183]  [<ffffffffc078b20b>] dsl_scan_visitbp+0x4ab/0xca0 [zfs]
+[18240.237216]  [<ffffffffc078b20b>] dsl_scan_visitbp+0x4ab/0xca0 [zfs]
+[18240.237256]  [<ffffffffc078b417>] dsl_scan_visitbp+0x6b7/0xca0 [zfs]
+[18240.237294]  [<ffffffffc078b20b>] dsl_scan_visitbp+0x4ab/0xca0 [zfs]
+[18240.237328]  [<ffffffffc078b20b>] dsl_scan_visitbp+0x4ab/0xca0 [zfs]
+[18240.237363]  [<ffffffffc078b20b>] dsl_scan_visitbp+0x4ab/0xca0 [zfs]
+[18240.237399]  [<ffffffffc078b20b>] dsl_scan_visitbp+0x4ab/0xca0 [zfs]
+[18240.237434]  [<ffffffffc078b20b>] dsl_scan_visitbp+0x4ab/0xca0 [zfs]
+[18240.237469]  [<ffffffffc078b20b>] dsl_scan_visitbp+0x4ab/0xca0 [zfs]
+[18240.237503]  [<ffffffffc078b682>] dsl_scan_visitbp+0x922/0xca0 [zfs]
+[18240.237536]  [<ffffffffc078bae2>] dsl_scan_visitds+0xe2/0x4d0 [zfs]
+[18240.237569]  [<ffffffffc078cfbd>] dsl_scan_sync+0x2bd/0xc00 [zfs]
+[18240.237608]  [<ffffffffc07fc347>] ? zio_wait+0x157/0x1f0 [zfs]
+[18240.237645]  [<ffffffffc07a1613>] spa_sync+0x3c3/0xb30 [zfs]
+[18240.237650]  [<ffffffff810ac0c2>] ? default_wake_function+0x12/0x20
+[18240.237687]  [<ffffffffc07b2a4a>] txg_sync_thread+0x3ba/0x630 [zfs]
+[18240.237725]  [<ffffffffc07b2690>] ? txg_delay+0x180/0x180 [zfs]
+[18240.237734]  [<ffffffffc045fe31>] thread_generic_wrapper+0x71/0x80 [spl]
+[18240.237739]  [<ffffffffc045fdc0>] ? __thread_exit+0x20/0x20 [spl]
+[18240.237743]  [<ffffffff810a0808>] kthread+0xd8/0xf0
+[18240.237747]  [<ffffffff810a0730>] ? kthread_create_on_node+0x1e0/0x1e0
+[18240.237750]  [<ffffffff8182decf>] ret_from_fork+0x3f/0x70
+[18240.237752]  [<ffffffff810a0730>] ? kthread_create_on_node+0x1e0/0x1e0
